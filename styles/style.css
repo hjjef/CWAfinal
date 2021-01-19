@@ -1,0 +1,154 @@
+/*
+filename: style.css
+author: Henry Jeffers
+created: 24/08/2020
+last modified: 27/08/2020
+description: refers to assign1/xxxx.html
+*/
+
+body {
+  font: 1.3vw Arial, sans-serif;
+}
+
+nav { 
+  background-color: #024575;
+  overflow: auto;
+  border: 0.1rem solid black;
+}
+
+nav a{
+  float: left;
+  text-align: center;
+  color: white;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 2.5vw;
+}
+
+/* pseudo element to change nav bar link when hovering with mouse*/
+nav a:hover{
+  background-color: #e9f5ff;
+  color: black;
+}
+
+/* pseudo element to change colour of active nav link */
+nav a.active {
+  background-color: #022e4e;
+}
+
+footer p{
+  font-size: 1vw;
+  padding: 0.3rem 0.75rem;
+}
+
+footer {
+  border: 0.1rem solid grey;
+  position: fixed;
+  /* footer remains fixed at the bottom of screen */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #6bc0fc;
+  text-align: center;
+  overflow: auto;
+}
+
+/* Background of index page */
+.background {
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e9f5ff;
+}
+
+/* Any bottom elements have a margin before the fixed footer. */
+.bottom {
+  margin-bottom: 12%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 0.1rem solid grey;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: #e9f5ff;
+}
+
+tr {
+  background-color: #b5dffd;
+}
+
+aside {
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    border: inset 0.1rem lightgrey;
+    font-style: italic;
+    color: #0479cc;
+    width: 25%;
+}
+
+h1 {
+  font: 2.3vw Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 1.95vw;
+}
+
+h3 {
+  font-size: 1.5vw;
+}
+
+/* Colour of all headings is the same */
+h1,h2,h3 {
+  color: #023e68;
+}
+
+/* Alternating colours on the drop down menu in Q2 */
+#question2 option:nth-child(odd){
+  background-color: #e9f5ff;
+}
+
+#question2 option:nth-child(even){
+  background-color: #b5dffd;
+}
+
+/* Image on topic page */
+#swirl-topic-page {
+  width: 35%;
+  float: right;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  padding-right: 1rem;
+  max-width:100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query to have a breakpoint at 555 pixels
+ * Changes width and position of image */
+@media screen and (max-width: 555px) {
+  #swirl-topic-page {
+    width: 45%;
+    float: left;
+  }
+}
+
+:target {
+  border: 2px solid grey;
+  background-color: yellow;
+}
+
+
+
