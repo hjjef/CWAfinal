@@ -3,7 +3,7 @@ filename: quiz.js
 author: Henry Jeffers
 created: 29/09/2020
 last modified: 29/09/2020
-description: refers to assign2/quiz.htm and assign2/result.html
+description: refers to assign3/quiz.php and assign3/result.php
 */
 
 "use strict";
